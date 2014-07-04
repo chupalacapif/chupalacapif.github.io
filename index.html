@@ -1,21 +1,38 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Chupala CAPIF</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Chupala CAPIF by chupalacapif</title>
   </head>
-<body>
-  <h1>¿Está caído CAPIF?</h1>
-  <span id="respuesta">A ver...</span>
-  <script>
-    // http://stackoverflow.com/a/3705102/641451
-    var el = document.createElement('img');
-    var resp = document.getElementById('respuesta');
-    el.onerror = function() {
-      resp.innerHTML = "¡YEAH!";
-    }
-    el.onload = function() {
-      resp.innerHTML = "Noouu :(";
-    }
-    el.src = "http://www.capif.org.ar/images/capif_logo.png?" + new Date().getTime();
-  </script>
-</body>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Chupala CAPIF</h1>
+        <h2>Welcome to the interwebs</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/chupalacapif" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="est%C3%A1-ca%C3%ADdo-capif" class="anchor" href="#est%C3%A1-ca%C3%ADdo-capif"><span class="octicon octicon-link"></span></a>¿Está caído CAPIF?</h1>
+
+<p>A ver...</p>
+      </section>
+    </div>
+
+    
+  </body>
 </html>
