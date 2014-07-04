@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Chupala CAPIF by chupalacapif</title>
+    <title>Chupala CAPIF</title>
   </head>
 
   <body>
@@ -17,22 +17,29 @@
       <div class="container">
         <h1>Chupala CAPIF</h1>
         <h2>Welcome to the interwebs</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/chupalacapif" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-        <h1>
-<a name="est%C3%A1-ca%C3%ADdo-capif" class="anchor" href="#est%C3%A1-ca%C3%ADdo-capif"><span class="octicon octicon-link"></span></a>¿Está caído CAPIF?</h1>
+        <h1><a name="est%C3%A1-ca%C3%ADdo-capif" class="anchor" href="#est%C3%A1-ca%C3%ADdo-capif"><span class="octicon octicon-link"></span></a>¿Está caído CAPIF?</h1>
 
-<p>A ver...</p>
+        <p id="respuesta">A ver...</p>
       </section>
     </div>
 
-    
+  <script>
+    var el = document.createElement('img');
+      var resp = document.getElementById('respuesta');
+      el.onerror = function() {
+        resp.innerHTML = "¡YEAH!";
+        resp.className = "is-down";
+      }
+      el.onload = function() {
+        resp.innerHTML = "Nops :/";
+        resp.className = "is-up";
+      }
+      el.src = "http://www.capif.org.ar/images/capif_logo.png?" + new Date().getTime();
+  </script>
   </body>
 </html>
